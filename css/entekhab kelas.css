@@ -1,0 +1,96 @@
+select {
+  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #d7a1f9;
+  color: #000000;
+  font-size: 20px;
+  font-family: BYekan;
+  text-align: center;
+}
+
+script {
+  font-size: 30px;
+  font-family: BYekan;
+  text-align: center;
+}
+
+.container .content-area .wrapper h2{
+color: #54066e;
+}
+carsAndModels[type="text"],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #d7a1f9;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #d7a1f9;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label[for="info"] {
+  font-size: 20px;
+  font-family: BYekan;
+  color: #000000;
+}
+
+textarea[type="text"] {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #d7a1f9;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  resize: none;
+}
+
+button[type="ثبت"] {
+  background-color: #7800a0;
+  width: 100px;
+  border: none;
+  color: #e3c5f6;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  font-family: BYekan;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn {
+  background: #7800a0;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn .fas {
+  margin-left: 10px;
+  font-size: 12px;
+}

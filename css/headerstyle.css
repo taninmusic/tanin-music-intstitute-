@@ -1,0 +1,115 @@
+*{
+	margin:0;
+	padding:0;
+}
+.center{
+	text-align:center;
+}
+@font-face {
+    font-family: IranNastaliq;
+    src: url('../fonts/IranNastaliq/IranNastaliq.eot');
+    src: url('../fonts/IranNastaliq/IranNastaliq.eot') format('eot');
+    src:url('../fonts/IranNastaliq/IranNastaliq.woff2') format('woff2');
+    src:url('../fonts/IranNastaliq/IranNastaliq.woff'); format('woff');
+    src:url('../fonts/IranNastaliq/IranNastaliq.ttf'); format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family:'Byekan';
+	src:url('../fonts/BYekan/1.eot');
+    src:url('../fonts/BYekan/1.eot') format('eot');
+	src:url('../fonts/BYekan/3.woff'); format('woff');
+    src:url('../fonts/BYekan/2.ttf'); format('truetype');
+    font-weight: normal;
+    font-style: normal;			
+}
+@font-face{
+    font-family: Niconne; 
+    src: url('../fonts/Niccone/Niconne.eot'); 
+    src: url('../fonts/Niccone/Niconne.woff');
+    src: url('../fonts/Niccone/Niconne.ttf');
+}
+.wrapper{
+	width:1170px;
+	margin:0 auto;
+}
+header{
+	height:100px;
+	background:#aee4fb;
+	width:100%;
+	z-index:12;
+	position:fixed;
+}
+.logo{
+	width:30%;
+	float:left;
+	line-height:100px;
+}
+.logo a{
+	text-decoration:none;
+	font-size:30px;
+    font-family: 'Niconne';
+	color:#000;
+	vertical-align:top;
+}
+nav{
+	float:right;
+	line-height:100px;
+}
+nav a{
+	text-decoration:none;
+	font-family:'Byekan';
+	font-size:20px;
+	margin:0 10px;
+	color:#93024A;
+}
+nav a:hover{
+	color:#000;
+}
+.banner-area{
+	width:100%;
+	height:350px;
+	position:fixed;
+	top:100px;
+	background-image:url(../images/header4.jpg);
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-position:center center;
+}
+.banner-area h2{
+	padding-top:2%;
+	font-size:50px;
+	font-family:poppins;
+	text-transform:uppercase;
+	color:#fff;
+	opacity:.5;
+	vertical-align:middle;
+	font-family: 'IranNastaliq';
+}
+.content-area{
+	width:100%;
+	position:relative;
+	top:450px;
+	background:#ddd;
+	height:2550px;
+}
+.content-area h2{
+	font-family: 'IranNastaliq';
+	padding-top:30px;
+	font-size:60px;
+	margin:0;
+}
+.content-area h4{
+	 direction:rtl;
+	 font-family:'Byekan';
+	 text-align:right;
+	 font-size:22px;
+}
+.content-area p{
+	padding:2% 0;
+	direction:rtl;
+	font-family:'Byekan';
+	line-height:30px;
+}
+

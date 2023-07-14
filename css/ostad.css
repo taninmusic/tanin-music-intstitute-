@@ -1,0 +1,99 @@
+ /* تغییرات برای صفحات با عرض کمتر از 562 پیکسل */
+@media only screen and (max-width: 562px) {
+.wrapper {
+  width: 100%;
+  margin: 0;
+}
+.banner-area h2 {
+  font-size: 30px;
+  padding-top: 40%;
+}
+.img {
+  margin-right: 0;
+  margin: 10% auto;
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+.txt {
+  margin-right: 0px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.aaa {
+  display: none;
+}
+}
+
+/* تغییرات برای صفحات با عرض بیشتر از 562 پیکسل */
+.wrapper {
+width: 80%;
+margin: 0 auto;
+}
+.banner-area {
+width: 100%;
+height: 350px;
+position: fixed;
+top: 0;
+background-image: url(images/header66.jpg);
+background-size: cover;
+background-position: center center;
+}
+.banner-area h2 {
+padding-top: 8%;
+font-size: 50px;
+font-family: poppins;
+text-transform: uppercase;
+color: #fff;
+opacity: .5;
+vertical-align: middle;
+font-family: 'IranNastaliq';
+}
+.content-area {
+width: 100%;
+position: relative;
+top: 0;
+background: #ddd;
+height: auto;
+}
+.content-area h2 {
+font-family: 'IranNastaliq';
+padding-top: 30px;
+font-size: 60px;
+margin: 0;
+}
+.content-area h4 {
+direction: rtl;
+font-family: 'Byekan';
+text-align: right;
+font-size: 22px;
+}
+.content-area p {
+padding: 2% 0;
+direction: rtl;
+font-family: 'Byekan';
+line-height: 30px;
+}
+h2.center {
+text-align: center;
+}
+.img {
+margin: 100px auto;
+border-radius: 150px 20px 30px 23px;
+width: 80%;
+max-width: 600px;
+height: auto;
+}
+h1 {
+font-size: 25px;
+}
+.txt {
+margin: 40px auto;
+color: #93024A;
+direction: rtl;
+font-family: 'Byekan';
+}
+.aaa {
+margin: 0 30px;
+}

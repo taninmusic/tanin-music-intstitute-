@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <audio autoplay loop>
+      <source src="music/experience.mp3" type="audio/mpeg" />
+    </audio>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>انتخاب کلاس</title>
+    <link rel="stylesheet" href="./css/kelass.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./css/entekhab kelas.css" />
+  </head>
+
+  <body>
+    <style>
+      .container {
+        background-image: url(./images/234.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+      }
+    </style>
+    <script>
+      function function1() {
+        var a, b, c, d;
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        d = document.getElementById("c").value;
+        if (a == "" || b == "" || d == "") {
+          c = "پر کردن بخش های بالا اجباری است.";
+        } else {
+          c =
+            "با تشکر از شما اطلاعات شما ثبت شد به زودی همکاران ما با شما تماس خواهند گرفت";
+        }
+        document.getElementById("txt").innerHTML = c;
+      }
+    </script>
+    <div class="container">
+      <header>
+        <!-- Navbar -->
+        <nav class="Navbar">
+          <div class="Navbar__col-left">
+            <div>
+              <img src="./images/logo1.png" alt="Logo" />
+            </div>
+
+            <p>Tanin Music Institute</p>
+          </div>
+          <div class="Navbar__col-right">
+            <ul>
+              <li><a href="index.html">صفحه اصلی</a></li>
+              <li><a href="service-list-sonati.html">ساز سنتی</a></li>
+              <li><a href="service-list-pop.html">ساز پاپ</a></li>
+              <li><a href="service-list-clasic.html">ساز کلاسیک</a></li>
+              <li><a href="reservation.html">رزرو کلاس</a></li>
+              <li><a href="sign in.html">ثبت نام</a></li>
+              <li><a href="shop.html">فروش و تعمیر ساز</a></li>
+              <li><a href="about_us.html">درباره‌ ما</a></li>
+            </ul>
+          </div>
+
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </nav>
+
+        <!-- Mobile Navbar -->
+        <nav class="mobile-navbar">
+          <ul class="mobile-menu">
+            <li><a href="index.html" class="menu-btn">صفحه اصلی</a></li>
+            <li>
+              <a href="service-list-sonati.html" class="menu-btn">ساز سنتی</a>
+            </li>
+            <li>
+              <a href="service-list-pop.html" class="menu-btn">ساز پاپ</a>
+            </li>
+            <li>
+              <a href="service-list-clasic.html" class="menu-btn">ساز کلاسیک</a>
+            </li>
+            <li><a href="reservation.html" class="menu-btn">رزرو کلاس</a></li>
+            <li><a href="sign in.html" class="menu-btn">ثبت نام</a></li>
+            <li><a href="shop.html" class="menu-btn">فروش و تعمیر ساز</a></li>
+            <li><a href="about_us.html" class="menu-btn">درباره‌ ما</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content-area">
+        <div class="wrapper">
+          <h2>انتخاب کلاس و استاد مورد نظر</h2>
+          <select required id="car" onchange="ChangeCarList()">
+            <option value="نوع ساز">نوع ساز</option>
+            <option value="تمبک">تمبک</option>
+            <option value="سنتور">سنتور</option>
+            <option value="تار">تار</option>
+            <option value="نی">نی</option>
+            <option value="قانون">قانون</option>
+            <option value="دف">دف</option>
+            <option value="کیبورد الکترونیک">کیبورد الکترونیک</option>
+            <option value="درام">درام</option>
+            <option value="گیتار الکتریک">گیتار الکترونیک</option>
+            <option value="پیانو">پیانو</option>
+            <option value="ویولن">ویولن</option>
+          </select>
+
+          <select required id="carmodel"></select>
+
+          <script>
+            var carsAndModels = {};
+            carsAndModels["نوع ساز"] = ["استاد مورد نظر"];
+            carsAndModels["تمبک"] = [
+              "استاد رضایی",
+              "استاد احمدی",
+              "استاد قاسمی",
+            ];
+            carsAndModels["سنتور"] = [
+              "استاد احمدوند",
+              "استاد احمدی",
+              "استاد نوروزی",
+            ];
+            carsAndModels["تار"] = [
+              "استاد خلیلی",
+              "استاد محمدپور",
+              "استاد قنبری",
+            ];
+            carsAndModels["نی"] = ["استاد دوستوندی"];
+            carsAndModels["قانون"] = ["استاد دوستوندی"];
+            carsAndModels["دف"] = ["استاد رمضانی", "استاد حمزه ای"];
+            carsAndModels["کیبورد الکترونیک"] = ["استاد مردانی"];
+            carsAndModels["درام"] = ["استاد دیناروند"];
+            carsAndModels["گیتار الکتریک"] = ["استاد محمدی"];
+            carsAndModels["پیانو"] = [
+              "استاد رحمانی",
+              "استاد کرمی",
+              "استاد باقری",
+            ];
+            carsAndModels["ویولن"] = [
+              "استاد دوستوندی",
+              "استاد جلیلیان",
+              "استاد باقری",
+            ];
+
+            function ChangeCarList() {
+              var carList = document.getElementById("car");
+              var modelList = document.getElementById("carmodel");
+              var selCar = carList.options[carList.selectedIndex].value;
+              while (modelList.options.length) {
+                modelList.remove(0);
+              }
+              var cars = carsAndModels[selCar];
+              if (cars) {
+                var i;
+                for (i = 0; i < cars.length; i++) {
+                  var car = new Option(cars[i], i);
+                  modelList.options.add(car);
+                }
+              }
+            }
+          </script>
+          <form>
+            <label for="info">نام</label><br />
+            <input type="text" required id="a" name="fname" /><br />
+            <label for="info">نام خانوادگی</label><br />
+            <input type="text" required id="b" name="lname" /><br />
+            <label for="info">شماره تلفن</label><br />
+            <input type="text" required id="c" name="pnumber" /><br />
+            <label for="info">سایر توضیحات</label><br />
+            <textarea type="text">Some text...</textarea><br />
+            <a onclick="function1()"><div class="btn">ثبت</div></a>
+            <p id="txt" style="text-align: center"></p>
+          </form>
+        </div>
+      </div>
+      <!--footer-->
+      <footer>
+        <div class="footer_col-1">
+          <h2><span>Tanin</span>Music class</h2>
+
+          <p>کلاس موسیقی طنین آموزش انواع آلات موسیقی را در</p>
+          <p>سه سبک سنتی، کلاسیک و پاپ را به شما ارائه می دهد</p>
+          <div class="footer-contact">
+            <span>
+              <img src="./images/phone.svg" alt="phone" />
+              <a href="tel:+123456789">123-456-789</a>
+            </span>
+
+            <span>
+              <img src="./images/mail.svg" alt="mail" />
+              <a href="mailto:info@saramehrabipour.com"
+                >info@saramehrabipour.com</a
+              >
+            </span>
+          </div>
+
+          <div class="footer-media">
+            <img src="./images/facebook.svg" alt="facebook" />
+            <img src="./images/instagram.svg" alt="instagram" />
+            <img src="./images/twitter.svg" alt="twitter" />
+            <img src="./images/youtube.svg" alt="youtube" />
+          </div>
+        </div>
+
+        <div class="footer_col-2">
+          <h2>لینک های سریع</h2>
+
+          <ul>
+            <li><a href="#">مراسم ها</a></li>
+            <li><a href="#">گروه مدیریتی</a></li>
+            <li><a href="#">منتور ها</a></li>
+            <li><a href="#">گالری</a></li>
+            <li><a href="#">استاد ها و کلاس ها</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_col-3">
+          <h2>ارتباط با ما</h2>
+          <form>
+            <input type="email" name="mail" placeholder="Email" />
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
+            <button>ارسال</button>
+          </form>
+        </div>
+      </footer>
+      <!--copy right-->
+      <div class="footer-bottom">
+        &copy; کلیه حقوق مادی و معنوی سایت نزد آموزشگاه موسیقی طنین محفوظ است و
+        طبق قانون جرائم رایانه هرگونه کپی برداری ممنوع بوده و پیگرد قانونی دارد
+        | طراحی شده توسط سارا محرابی پور
+      </div>
+    </div>
+  </body>
+  <script src="./JavaScript/app.js"></script>
+</html>

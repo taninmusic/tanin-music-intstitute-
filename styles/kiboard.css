@@ -1,0 +1,98 @@
+@media only screen and (max-width: 562px) {
+  .wrapper {
+    width: auto;
+    margin: 0 auto;
+  }
+  .banner-area h2 {
+    font-size: 30px;
+    padding-top: 40%;
+  }
+  .img {
+    margin-right: 0px;
+    margin: 10%;
+    margin-top: 0px;
+    width: 100px;
+    height: 50px;
+    text-align: left;
+  }
+  .txt {
+    margin-right: 0px;
+    margin: 0%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .aaa {
+    display: none;
+  }
+}
+.wrapper {
+  width: auto;
+  margin: 0 auto;
+}
+.banner-area {
+  width: 100%;
+  height: 350px;
+  position: fixed;
+  top: 0px;
+  background-image: url(images/header66.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.banner-area h2 {
+  padding-top: 8%;
+  font-size: 50px;
+  font-family: poppins;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.5;
+  vertical-align: middle;
+  font-family: "IranNastaliq";
+}
+.content-area {
+  width: 100%;
+  position: relative;
+  top: 0px;
+  background: #ddd;
+  height: auto;
+}
+.content-area h2 {
+  font-family: "IranNastaliq";
+  padding-top: 30px;
+  font-size: 60px;
+  margin: 0;
+}
+.content-area h4 {
+  direction: rtl;
+  font-family: "Byekan";
+  text-align: right;
+  font-size: 22px;
+}
+.content-area p {
+  padding: 2% 0;
+  direction: rtl;
+  font-family: "Byekan";
+  line-height: 30px;
+}
+h2.center {
+  text-align: center;
+}
+.img {
+  border-radius: 150px 20px 30px 23px;
+  margin-left: 280px;
+  margin-top: 100px;
+}
+h1 {
+  font-size: 25px;
+}
+.txt {
+  margin-right: 250px;
+  margin-top: 40px;
+  color: #93024a;
+  direction: rtl;
+  font-family: "Byekan";
+}
+.aaa {
+  margin-left: 30px;
+}

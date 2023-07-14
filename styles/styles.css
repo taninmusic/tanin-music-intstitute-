@@ -1,0 +1,565 @@
+@font-face {
+  font-family: "IranNastaliq";
+  src: url("../fonts/IranNastaliq/IranNastaliq.eot");
+  src: url("../fonts/IranNastaliq/IranNastaliq.eot") format("eot");
+  src: url("../fonts/IranNastaliq/IranNastaliq.woff2") format("woff2");
+  src: url("../fonts/IranNastaliq/IranNastaliq.woff") format("woff");
+  src: url("../fonts/IranNastaliq/IranNastaliq.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Byekan";
+  src: url("../fonts/BYekan/1.eot");
+  src: url("../fonts/BYekan/1.eot") format("eot");
+  src: url("../fonts/BYekan/3.woff") format("woff");
+  src: url("../fonts/BYekan/2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Niconne";
+  src: url("../fonts/Niccone/Niconne.eot");
+  src: url("../fonts/Niccone/Niconne.woff");
+  src: url("../fonts/Niccone/Niconne.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #ead3ffb8;
+}
+
+.hamburger {
+  display: none;
+  z-index: 100;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+.mobile-navbar .mobile-menu {
+  list-style-type: none;
+}
+
+.Navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 8rem;
+  background-color: #d7a1f9;
+}
+
+.Navbar .Navbar__col-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Navbar .Navbar__col-left div {
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  margin-left: -1rem;
+}
+
+.Navbar .Navbar__col-left div img {
+  width: 100%;
+  height: 100%;
+}
+
+.Navbar .Navbar__col-left p {
+  font-family: "Niconne";
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.Navbar .Navbar__col-right ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 1.5rem;
+}
+
+.Navbar .Navbar__col-right ul a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+  font-family: "Byekan";
+  font-weight: bold;
+}
+
+.Navbar .Navbar__col-right ul a:hover {
+  color: #852ebc;
+}
+
+.container .cover {
+  width: 100%;
+  overflow: hidden;
+  background: url("../images/125.jpg") no-repeat center center/cover;
+  height: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .cover h2 {
+  font-family: "IranNastaliq" !important;
+  font-size: 4.5rem;
+  margin: 0;
+  padding: 0;
+  color: rgba(69, 23, 69, 0.619);
+}
+
+.container .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0 0 0;
+}
+
+.container .title h1 {
+  font-family: "IranNastaliq" !important;
+  font-size: 70px;
+  line-height: 150px;
+}
+.container .title h2 {
+  font-family: "IranNastaliq" !important;
+  font-size: 35px;
+}
+.container .music {
+  margin-top: 1rem;
+}
+
+.container main {
+  padding: 0 8rem;
+}
+
+.container main .detail {
+  direction: rtl;
+  text-align: right;
+  margin: 2rem 0;
+  font-family: "Byekan";
+  line-height: 30px;
+}
+
+.container main .music-types {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.container main .music-types h4 {
+  font-family: "Byekan";
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.container main .music-types .music-type-1,
+.container main .music-types .music-type-2,
+.container main .music-types .music-type-3 {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.container main .music-types .music-type-1 div,
+.container main .music-types .music-type-2 div,
+.container main .music-types .music-type-3 div {
+  width: 60%;
+  padding: 0 1rem;
+}
+
+.container main .music-types .music-type-1 div h3,
+.container main .music-types .music-type-2 div h3,
+.container main .music-types .music-type-3 div h3 {
+  font-family: "Byekan";
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.container main .music-types .music-type-1 div p,
+.container main .music-types .music-type-2 div p,
+.container main .music-types .music-type-3 div p {
+  font-family: "Byekan";
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  direction: rtl;
+}
+
+.container main .music-types .music-type-1 div a,
+.container main .music-types .music-type-2 div a,
+.container main .music-types .music-type-3 div a {
+  font-family: "Byekan";
+  text-decoration: none;
+  background-color: #7800a0;
+  padding: 0.8rem 2.7rem;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.container main .music-types .music-type-1 figure,
+.container main .music-types .music-type-2 figure,
+.container main .music-types .music-type-3 figure {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container main .music-types .music-type-1 figure img,
+.container main .music-types .music-type-2 figure img,
+.container main .music-types .music-type-3 figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.container main .comments {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container main .comments form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #d7a1f9;
+  border-radius: 20px;
+  padding: 1.5rem 0;
+}
+
+.container main .comments form h5 {
+  font-family: "Byekan";
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.container main .comments form input {
+  background-color: #e7f2f8;
+  width: 80%;
+  text-align: right;
+  height: 2.5rem;
+  border-radius: 20px;
+  border: none;
+  padding: 0 1rem;
+  font-family: "Byekan";
+}
+
+.container main .comments form input:focus {
+  outline: none;
+}
+
+.container main .comments form textarea {
+  width: 80%;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  font-family: "Byekan";
+  text-align: right;
+  background-color: #e7f2f8;
+  resize: none;
+}
+
+.container main .comments form textarea:focus {
+  outline: none;
+}
+
+.container main .comments form button {
+  background-color: #7800a0;
+  width: 40%;
+  height: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  font-family: "Byekan";
+  border-radius: 20px;
+}
+.container .footer-bottom {
+  background-color: #d7a1f9;
+  font-family: BYekan;
+  padding: 12px;
+}
+.container button {
+  font-family: BYekan;
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media only screen and (max-width: 1300px) {
+  .Navbar .Navbar__col-right {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 50px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 17px;
+    padding: 0.5rem;
+    direction: rtl;
+  }
+
+  .hamburger .bar {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 3.2px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+
+  .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+
+  .hamburger::after {
+    content: "";
+    display: block;
+    width: 55%;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-7px, 6px);
+    width: 100%;
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-7px, -7px);
+    width: 100%;
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .mobile-navbar {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background: rgba(223, 209, 209, 0.453);
+    backdrop-filter: blur(25px);
+    padding-top: 130px;
+    transition: 0.4s;
+  }
+
+  .mobile-navbar.is-active {
+    left: 0;
+  }
+
+  .mobile-navbar .mobile-menu ul {
+    list-style-type: none;
+  }
+
+  .mobile-navbar a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #93024a;
+    font-size: 1rem;
+    font-family: "Byekan";
+    font-weight: bold;
+  }
+
+  .mobile-navbar a:hover {
+    color: #000;
+  }
+
+  .container main .music-types .music-type-1,
+  .container main .music-types .music-type-2,
+  .container main .music-types .music-type-3 {
+    height: auto;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .container main .music-types .music-type-1 div,
+  .container main .music-types .music-type-2 div,
+  .container main .music-types .music-type-3 div {
+    width: 100%;
+  }
+
+  .container main .music-types .music-type-1 figure,
+  .container main .music-types .music-type-2 figure,
+  .container main .music-types .music-type-3 figure {
+    display: none;
+  }
+
+  .container main .comments {
+    margin-top: 2.5rem;
+  }
+
+  .container main .comments form {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Navbar {
+    padding: 1rem 5rem;
+  }
+
+  .container main {
+    padding: 0 5rem;
+  }
+
+  .container main .comments {
+    margin-top: 2rem;
+  }
+
+  .container main .comments form {
+    width: 80%;
+  }
+
+  .container .title h1 {
+    font-size: 50px;
+  }
+
+  .container .title h2 {
+    font-size: 35px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar {
+    padding: 0.8rem 3rem;
+  }
+
+  .Navbar .Navbar__col-left div {
+    height: 40px;
+  }
+
+  .Navbar .Navbar__col-left p {
+    font-size: 1rem;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+    padding: 0.3rem;
+  }
+
+  .hamburger .bar {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 2.2px;
+  }
+
+  .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+  }
+
+  .hamburger::after {
+    content: "";
+    display: block;
+    width: 55%;
+    height: 2px;
+  }
+
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-5px, 5px);
+    width: 100%;
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-6px, -7px);
+    width: 100%;
+  }
+
+  .container .title h1 {
+    font-size: 45px;
+  }
+
+  .container .title h2 {
+    font-size: 30px;
+}
+
+  .container main {
+    padding: 0 3rem;
+  }
+
+  .container main .comments form {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .Navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .Navbar .Navbar__col-left p {
+    font-size: 0.8rem;
+  }
+
+  .container .title h1 {
+    font-size: 40px;
+  }
+
+  .container .title h2 {
+    font-size: 25px;
+}
+
+  .container main {
+    padding: 0 2rem;
+  }
+
+  .container main .comments form {
+    width: 100%;
+  }
+}

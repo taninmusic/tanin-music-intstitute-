@@ -1,0 +1,106 @@
+@font-face{
+    font-family: Niconne; 
+    src: url(../fonts/Niccone/Niconne.eot); 
+    src: url(../fonts/Niccone/Niconne.woff);
+    src: url(../fonts/Niccone/Niconne.ttf);
+}
+.footer{
+	background:#303036;
+	color:#d3d3d3;
+	height:400px;
+	position:relative;
+}
+.footer .footer-content{
+	height:350px;
+	display:flex;
+}
+.footer .footer-content .footer-section{
+	flex:1;
+	padding:25px;
+}
+.footer .footer-content h1,
+.footer .footer-content h2{
+	color:#FFFFFF;
+}
+.footer .footer-content h1{
+	font-family: 'Niconne';
+}
+.footer .footer-content .about h1 span{
+	color:#aee4fb;
+	font-family: 'Niconne';
+}
+.footer .footer-content .about .contact span{
+	display:block;
+	font-size:1.1em;
+	margin-bottom:8px;
+}
+.footer .footer-content .about .socials a{
+	border:1px solid #aee4fb;
+	width:45px;
+	height:41px;
+	padding-top:10px;
+	margin-right:5px;
+	text-align:center;
+	display:inline-block;
+	font-size:1.3em;
+	border-radius:5px;
+    color:#aee4fb;
+}
+.footer .footer-content .about .socials a:hover{
+	color:#FFFFFF;
+	border:1px solid white;
+}
+.footer .footer-content .links ul a{
+	display:block;
+	margin-bottom:10px;
+	font-size:1.2em;
+	text-decoration:none;
+	color:white;
+	transition:all .3s;
+}
+.footer .footer-content .links ul a:hover{
+	margin-left:15px;
+	transition:all .3s;
+}
+.footer .footer-content .contact-form .contact-input1{
+	background:#272727;
+	color:#bebdbd;
+	margin-bottom:10px;
+	line-height:1.5em;
+	padding:.9rem 6rem;
+	border:none;
+	border-radius:7px;
+}
+.footer .footer-content .contact-form .contact-input2{
+	background:#272727;
+	color:#bebdbd;
+	margin-bottom:10px;
+	line-height:1.5em;
+	padding:.9rem 6.4rem;
+	border:none;
+	border-radius:7px;
+}
+.footer .footer-content .contact-form .contact-input1:focus{
+	background:#1a1a1a;
+}
+.footer .footer-content .contact-form .contact-input2:focus{
+	background:#1a1a1a;
+}
+.footer .footer-bottom{
+	background:#aee4fb;
+	color:#1a1a1a;
+	height:50px;
+	width:100%;
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	padding-top:20px;
+}
+.btn-big{
+	padding:.7rem 1.3rem;
+	line-height:1.3rem;
+	background-color:#aee4fb;
+	border-radius:7px;
+}
+
